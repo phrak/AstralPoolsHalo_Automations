@@ -40,7 +40,6 @@ Add the following lines to `configuration.yaml`
 
 ```
 # Pool Acid Sensors and Variables
-sensor:
   - platform: template
     sensors:
       # Calculate the sum of acid dosed today plus cumulative acid dosed
@@ -51,9 +50,9 @@ sensor:
       # Show how much acid is still available in the drum.
       # This sensor will start at the volume of the drum (as stored in input_number.pool_acid_drum_volume) and decrease by the amount dosed each day.
       pool_acid_remaining:
-        friendly_name: "Pool Acid Remaining"
+        friendly_name: "Pool Acid Drum Volume Remaining"
         unit_of_measurement: 'mL'
-        value_template: "{{ states('input_number.pool_acid_drum_volume') | float - states('input_number.pool_acid_cumulative_dosed') | float }}"
+        value_template: "{{ states('input_number.pool_acid_drum_volume') | float - states('input_number.pool_acid_cumulative_dosed') | float - states('sensor.hchlor_dosing_pump_today_ml') | float }}"
       # Average Daily Usages: 3, 7, 30 days
       pool_acid_average_daily_usage_3_days:
         friendly_name: "Pool Acid Average Daily Usage over Last 3 Days"
