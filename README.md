@@ -9,5 +9,5 @@ Now that the Halo has Home Assistant integration, I wanted to start tracking and
 
 # Index:
 
-## 1. Acid Dosing Measurements
+## 1. Cumulative Acid Dosing Over Time
 https://github.com/phrak/AstralPoolsHalo_Automations/blob/main/Acid%20Dosing.md
