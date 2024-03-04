@@ -1,4 +1,4 @@
-# Acid Dosing Measurements
+# Cumulative Acid Dosing Over Time
 I wanted to know when the acid drum for the peristaltic pump is nearing empty.
 My pool acid is automatically fed by the Halo's peristaltic pump from a 5L drum next to my pump-house, but there are no warnings or notifications about the drum being empty or nearing empty.
 
