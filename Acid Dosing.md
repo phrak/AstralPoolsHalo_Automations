@@ -199,7 +199,7 @@ Dependency on the via the [multiple-entity-row](https://github.com/benct/lovelac
 ```
 
 ## Change Log
-v1.0, 4 March 2024, Initial version released
-v1.1, 4 March 2024, Updated pool_acid_remaining sensor to include the running dosage of today in the calculation. Thanks @zappoo.
-v1.2, 5 March 2024, Fixed Cumulative counter reset to zero on HA restart. Removed initial: 0 from Cumulative sensor. Thanks @zappoo.
+* v1.0, 4 March 2024, Initial version released
+* v1.1, 4 March 2024, Updated pool_acid_remaining sensor to include the running dosage of today in the calculation. Thanks @zappoo.
+* v1.2, 5 March 2024, Fixed Cumulative counter reset to zero on HA restart. Removed initial: 0 from Cumulative sensor. Thanks @zappoo.
 
