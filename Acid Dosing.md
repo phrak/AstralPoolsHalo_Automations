@@ -31,7 +31,6 @@ The Halo tracks acid dosing via the `sensor.hchlor_dosing_pump_today_ml` sensor,
 ### Dashboard:
 1. Create a Lovelace Card that tracks everything with a button to reset the acid volume when refilled.
 
-![image|351x500](upload://6VS702WhwobWejLWUeVjYT2CRkz.png)
 
 
 ## Guide
@@ -81,7 +80,7 @@ input_number:
   # Store the cumulative volume of acid dosed 
   pool_acid_cumulative_dosed:
     name: Pool Acid Cumulative Dosed
-    initial: 0
+#    initial: 0
     min: 0
     max: 25000
     step: 1
@@ -198,3 +197,9 @@ Dependency on the via the [multiple-entity-row](https://github.com/benct/lovelac
             refresh_interval: 0
 
 ```
+
+## Change Log
+v1.0, 4 March 2024, Initial version released
+v1.1, 4 March 2024, Updated pool_acid_remaining sensor to include the running dosage of today in the calculation. Thanks @zappoo.
+v1.2, 5 March 2024, Fixed Cumulative counter reset to zero on HA restart. Removed initial: 0 from Cumulative sensor. Thanks @zappoo.
+
